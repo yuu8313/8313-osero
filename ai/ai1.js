@@ -7,7 +7,7 @@ const AI_CONFIG = {
      * 'minimax': 時間かかるけど賢い
      * 'alphabeta': 探索効率が良いほう
      */
-    ALGORITHM: 'minimax',
+    ALGORITHM: 'alphabeta',
     
     /** 
      * マスの価値を考えるかどうか
@@ -23,7 +23,7 @@ const AI_CONFIG = {
      * false: 打てる場所の数は無視
      * 中盤の戦略で大事な場所
      */
-    USE_MOBILITY: true,
+    USE_MOBILITY: false,
 
     /** 
      * 安定した石を評価するかどうか
@@ -39,7 +39,7 @@ const AI_CONFIG = {
      * false: フロンティアは無視する
      * 中盤から終盤で効果的
      */
-    USE_FRONTIER: true,
+    USE_FRONTIER: false,
 
     /** 
      * パリティ（残りマス数の偶奇）を考えるかどうか
@@ -47,7 +47,7 @@ const AI_CONFIG = {
      * false: 残りマス数は気にしない
      * 終盤での細かい戦略
      */
-    USE_PARITY: true,
+    USE_PARITY: false,
 
     /** 
      * コーナーの評価をするかどうか
@@ -86,7 +86,7 @@ const AI_CONFIG = {
         PIECE_COUNT: 0.3, // 石の数重視
         FRONTIER: 0.4,   // フロンティア重視
         PARITY: 0.6,     // パリティ重視
-        CORNER: 2.0      // コーナー重視（これが超重要）
+        CORNER: 2.0      // コーナー重視（これが超超超超超超超超重要）
     },
 
     // エンドゲーム（終盤）に切り替える閾値
