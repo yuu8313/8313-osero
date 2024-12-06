@@ -75,7 +75,7 @@ const AI_CONFIG = {
      * @returns {number} 探索の最大深さ
      */
     MAX_DEPTH: function() {
-        return Math.min(this.DIFFICULTY + 5, 5);
+        return Math.min(this.DIFFICULTY + 3, 5);
     },
 
     // 各評価ポイントの重要さをここで調整する
